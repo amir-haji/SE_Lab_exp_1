@@ -21,6 +21,20 @@ function loadFooter() {
         });
 }
 
+// Function to validate the contact form
+function validateForm(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    if (name === "" || email === "" || message === "") {
+        alert("All fields are required.");
+    } else {
+        alert("Form submitted successfully!");
+        document.getElementById('contactForm').reset();
+    }
+}
+
 // Add event listeners after DOM content is loaded
 document.addEventListener("DOMContentLoaded", function() {
     loadHeader();
@@ -28,5 +42,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const button = document.getElementById("alertButton");
     if (button) {
         button.addEventListener("click", showAlert);
+    }
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', validateForm);
     }
 });
