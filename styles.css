@@ -11,6 +11,7 @@ header {
     color: #fff;
     padding: 1em 0;
     text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
 header h1 {
@@ -38,6 +39,7 @@ header nav ul li a {
 
 main {
     padding: 1em;
+    animation: fadeIn 2s ease-in-out;
 }
 
 main section {
@@ -52,6 +54,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    animation: fadeIn 2s ease-in-out;
 }
 
 form {
@@ -79,6 +82,7 @@ form button {
     color: #fff;
     border: none;
     cursor: pointer;
+    animation: fadeIn 2s ease-in-out;
 }
 
 /* Responsive Design */
@@ -90,5 +94,15 @@ form button {
 
     footer {
         position: static;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
