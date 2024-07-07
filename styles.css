@@ -17,6 +17,25 @@ header h1 {
     margin: 0;
 }
 
+header nav {
+    margin-top: 1em;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
 main {
     padding: 1em;
 }
