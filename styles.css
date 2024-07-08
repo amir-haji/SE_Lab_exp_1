@@ -11,6 +11,7 @@ header {
     color: #fff;
     padding: 1em 0;
     text-align: center;
+    animation: fadeIn 2s ease-in-out;
 }
 
 header h1 {
@@ -38,6 +39,7 @@ header nav ul li a {
 
 main {
     padding: 1em;
+    animation: fadeIn 2s ease-in-out;
 }
 
 main section {
@@ -52,4 +54,55 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+form {
+    margin-top: 1em;
+}
+
+form div {
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
