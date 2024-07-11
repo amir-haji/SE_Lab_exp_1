@@ -6,6 +6,30 @@
 علی رازقندی - ۹۹۱۰۹۲۹۶
 
 سید رضا قمقام - ۹۹۱۷۰۵۴۲
+## گزارش 
+در اینجا بخشی از اعمال انجام‌شده جهت توسعه برنامه در این مخزت را توضیح می‌دهم:
+در ابتدا برای محافظت از شاخه اصلی باید یک قانون محافظت تعریف کرد:
+![](https://github.com/amir-haji/SE_Lab_exp_1/blob/main/report_screenshots/branch_protection.png)
+در این بخش با تعیین الگو اسم شاخه، دیگر نمیتوان به طور مستقسیم به شاخه اصلی تغییرات ایجاد و نیاز به ایجاد درخواست تغییرات می‌باشد:
+![](https://github.com/amir-haji/SE_Lab_exp_1/blob/main/report_screenshots/protection_set.png)
+بعد از این مرحله، فایل‌های مربوط به برنامه را اضافه می‌کنیم. در این تصویر یک روند ایجاد شاخه فرعی و ایجاد تغییرات در مخزن از روی مخزن محای نشان داده شده است:
+![](https://github.com/amir-haji/SE_Lab_exp_1/blob/main/report_screenshots/git_overview.png)
+بعد از این مرحله تنظیمات استقرار را انجام می‌دهم که برای آن از یک فایل در مسیر .github/workflows استفاده می‌کنم:
+![](https://github.com/amir-haji/SE_Lab_exp_1/blob/main/report_screenshots/deploy_config.png)
+بعد از ایجاد فایل میتوان در بخش actions نتیجه آن را مشاهده کرد:
+![](https://github.com/amir-haji/SE_Lab_exp_1/blob/main/report_screenshots/actions.png)
+و در آخر با رفتن به بخش Pages آدرس صفحه ایجاد شده را دید. در اینجا تصویر صفحه ایجاد‌شده را مشاهده می‌کنید:
+![](https://github.com/amir-haji/SE_Lab_exp_1/blob/main/report_screenshots/web_overview.png)
+در روند ایجاد برنامه دو کانلیکت نیز ایجاد شده است که رفع یکی از آنها را در اینجا توضیح می‌دهم. در ابتدا همانطور که مشاهده می‌کنید بین این دو شاخه کانلیکت وجود دارپ.
+![](https://github.com/amir-haji/SE_Lab_exp_1/blob/main/report_screenshots/conflict1-part1.png)
+بعد از آن با ایجاد pull request میتوان با استفاده از امکانات در github تغییرات دو فایل را مشاهده کرد و کانفلیکت را رفع کرد:
+![](https://github.com/amir-haji/SE_Lab_exp_1/blob/main/report_screenshots/conflict1%20-%20part%202.png)
+![](https://github.com/amir-haji/SE_Lab_exp_1/blob/main/report_screenshots/conflict%201%20-%20part%203.png)
+در نهایت با رفع کانفلیکت میتوان این دوشاخه را با هم مرج کرد:
+![](https://github.com/amir-haji/SE_Lab_exp_1/blob/main/report_screenshots/conflict%201%20-%20part%204.png)
+همین روند را میتوان بر روی این کانفلیکت نیز انجام داد:
+![](https://github.com/amir-haji/SE_Lab_exp_1/blob/main/report_screenshots/conflict%202%20-%20part%201.png)
+
 
 ## Q1
 پوشه .git یک پوشه مخفی برای ریپازیتوری ایجاد شده است که در آن اطلاعات تمام اشیا و ریفرنس‌های مربوط به ریپازیتوری نگه داشته شده است تا بتواند تارخچه تمام تغییرات ایجاد شدخ در مخزن را دنبال کند. این پوشه با استفاده از دستور git init در یک پوشه ایجاد می‌شود و در واقع پوشه‌ای که در آن این دستور وارد شده باشد را به‌عنوان مخزن درنظر می‌گیرد.
